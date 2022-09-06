@@ -19,7 +19,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       { isLoading && <ActivityIndicator /> }
-      <Text>{isError ? 'All systems go' : "OH FUCK"}</Text>
+      <Text>{!isError ? 'All systems go' : "OH FUCK"}</Text>
       <StatusBar style="auto" />
       <Button title='press me bitch' onPress={rsvpButtonPressed}/>
     </View>
